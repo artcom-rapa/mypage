@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        {% block head %}
+        <meta charset="UTF-8">
+        <title>My first website</title>
+        <link rel="stylesheet" href="{{ url_for("static", filename= "style.css") }}">
+        {% endblock %}
+	</head>
+    <body>
+        <div class="main_body">
+            <div class="main_title">
+            <h2> Witaj na mojej stronie domowej</h2>
+            </div>
+            <div class="main_img">
+            <img src="{{ url_for("static", filename= "slider02.jpg")}}" alt="Konstrukcje stalowe" width="300" height="310" title="slider" />
+            </div>
+            <div id="content">{% block content %}{% endblock %}</div>
+          </div>
+    </body>
+</html>

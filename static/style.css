@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main_title {
+	font-size:28px;
+	text-align:left;
+	background-color: #999;
+}
+.main_body {
+	height: auto;
+	width: 1260px;
+	margin-left: 30px;
+	font-size: 24px;
+}
+
+.main_img {
+
+}
+.contact_items {
+	font-size: 36px;
+	color: #036;
+}
+}
+.formblock_label  {
+	font-size:28px;
+	font-style: normal;
+	font-weight: bold;
+}
+.formblock_textarea {
+	width: 50%;
+	height: 50px;
+}
+.send_btn_input {
+	text-align:center;
+	border:#CCC 2px solid;
+	background-color: #E4E4E4;
+	width: 100px;
+	height: 50px;
+	left: 300px;
+	margin-left: 350px;
+}
+.button {
+	margin-left: 50px;
+}
