@@ -1,37 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-	</head>
-    <body>
-        {% extends "index.html" %}
-        {% block content %}
-        <div class="main_body">
-            <div class="contact_items">
-            <h1> Kontakt </h1>
+{% extends "index.html" %}
+{% block content %}
+<div class="main_body">
+    <div class="contact_items">
+        <h1> Kontakt </h1>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <p><strong>email:</strong> marylu@grupa.com</p>
+            </li>
+            <li>
+                <p><strong>telefon:</strong>+48 507 207 067</p>
+            </li>
+        </ul>
+    </div>
+    <div class="formblock_label">
+        <p>Wyślij wiadomość</p>
+    </div>
+    <div class="formblock">
+        <form action="" method="post">
+            <div class="formblock_textarea">
+                <textarea id="tresc" name="tresc" class="materialize-textarea">Treść</textarea>
+                <label for="tresc"> </label>
             </div>
-            <div>
-                <ul>
-                    <li>
-                    <p> <strong>email:</strong> marylu@grupa.com</p>
-                    </li>
-                    <li>
-                    <p> <strong>telefon:</strong>+48 507 207 067</p>
-                    </li>
-                </ul>
-            </div>
-                <div class="formblock_label">
-                    <p>Wyślij wiadomość</p>
-                </div>
-                <div class="formblock">
-                    <form action="" method="post">
-                        <div class="formblock_textarea">
-                            <textarea id="tresc" name="tresc" class="materialize-textarea">Treść</textarea>
-                            <label for="tresc"> </label>
-                        </div>
-                        <button class="send_btn_input" type="submit" name="action">Zapisz</button>
-                    </form>
-                </div>
-        </div>
-        {% endblock %}
-    </body>
-</html>
+            <button class="send_btn_input" type="submit" name="action">Zapisz</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

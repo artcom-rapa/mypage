@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-from flask import request, redirect
+from flask import request
 
 app = Flask(__name__)
 
@@ -9,8 +9,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+
 @app.route('/me')
-def me():    return render_template("me.html")
+def me():
+    return render_template("me.html")
 
 
 @app.route('/contact', methods=['GET', 'POST'])
